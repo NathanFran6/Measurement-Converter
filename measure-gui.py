@@ -22,7 +22,8 @@ def Inch_Cent():
     def Inch_to_Cent():
         val = entry.get()
         ret =int(val)*2.54
-        display = tk.Label(win1, text = str(ret) + unit, font=('Arial', 17))
+        rNum = round(ret, 2)
+        display = tk.Label(win1, text = str(rNum) + unit, font=('Arial', 17))
         display.place(x=120, y=150)
         
     title= tk.Label(win1, text= 'Inches to Centimeters', font=('Arial', 17))
@@ -49,8 +50,9 @@ def Cent_Inch():
     #Calculation Function
     def Cent_to_Inch():
         val = entry.get()
-        ret =int(val)*0.3048
-        display = tk.Label(win2, text = str(ret) + unit, font=('Arial', 17))
+        ret =int(val)/2.54
+        rNum = round(ret, 2)
+        display = tk.Label(win2, text = str(rNum) + unit, font=('Arial', 17))
         display.place(x=120, y=150)
         
     title= tk.Label(win2, text= 'Centimeters to Inches', font=('Arial', 17))
@@ -77,8 +79,9 @@ def Feet_Meet():
     #Calculation Function
     def Feet_to_Meet():
         val = entry.get()
-        ret =int(val)*0.3048
-        display = tk.Label(win3, text = str(ret) + unit, font=('Arial', 17))
+        ret =int(val)/3.281
+        rNum = round(ret, 2)
+        display = tk.Label(win3, text = str(rNum) + unit, font=('Arial', 17))
         display.place(x=120, y=150)
         
     title= tk.Label(win3, text= 'Feet to Meters', font=('Arial', 17))
@@ -105,8 +108,9 @@ def Meet_Feet():
     #Calculation Function
     def Meet_to_Feet():
         val = entry.get()
-        ret =int(val)*3.28084
-        display = tk.Label(win4, text = str(ret) + unit, font=('Arial', 17))
+        ret =int(val)*3.281
+        rNum = round(ret, 2)
+        display = tk.Label(win4, text = str(rNum) + unit, font=('Arial', 17))
         display.place(x=120, y=150)
         
     title= tk.Label(win4, text= 'Meters to Feet', font=('Arial', 17))
