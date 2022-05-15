@@ -3,6 +3,8 @@ import tkinter as tk
 win = tk.Tk()
 
 frame = tk.Frame(master= win, width = 500, height = 500)
+win.minsize(500,500)
+win.maxsize(500,500)
 frame.pack()
 
 win.title('Measurement Converter')
@@ -15,6 +17,8 @@ def Inch_Cent():
     win1.title('Inches to Centimeters')
 
     frame= tk.Frame(master= win1, width= 400, height = 200)
+    win1.minsize(400,200)
+    win1.maxsize(400,200)
     frame.pack()
     
     unit = ' centimeters'
@@ -44,6 +48,8 @@ def Cent_Inch():
     win2.title('Centimeters to Inches')
 
     frame= tk.Frame(master= win2, width= 400, height = 200)
+    win2.minsize(400,200)
+    win2.maxsize(400,200)
     frame.pack()
     
     unit = ' inches'
@@ -73,6 +79,8 @@ def Feet_Meet():
     win3.title('Feet to Meters')
 
     frame= tk.Frame(master= win3, width= 400, height = 200)
+    win3.minsize(400,200)
+    win3.maxsize(400,200)
     frame.pack()
     
     unit = ' meters'
@@ -102,6 +110,8 @@ def Meet_Feet():
     win4.title('Feet to Meters')
 
     frame= tk.Frame(master= win4, width= 400, height = 200)
+    win4.minsize(400,200)
+    win4.maxsize(400,200)
     frame.pack()
     
     unit = ' meters'
