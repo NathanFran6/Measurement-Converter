@@ -2,13 +2,13 @@ import tkinter as tk
 
 win = tk.Tk()
 
-frame = tk.Frame(master= win, width = 500, height = 500)
+
+frame = tk.Frame(master= win, width = 500, height = 500, bg = '#525361')
 win.minsize(500,500)
 win.maxsize(500,500)
 frame.pack()
 
 win.title('Measurement Converter')
-win.configure(bg='red')
 
 #Functions
 def Inch_Cent():
@@ -16,7 +16,7 @@ def Inch_Cent():
     win1= tk.Tk()
     win1.title('Inches to Centimeters')
 
-    frame= tk.Frame(master= win1, width= 400, height = 200)
+    frame= tk.Frame(master= win1, width= 400, height = 200, bg = '#525361')
     win1.minsize(400,200)
     win1.maxsize(400,200)
     frame.pack()
@@ -30,7 +30,7 @@ def Inch_Cent():
         display = tk.Label(win1, text = str(rNum) + unit, font=('Arial', 17))
         display.place(x=120, y=150)
         
-    title= tk.Label(win1, text= 'Inches to Centimeters', font=('Arial', 17))
+    title= tk.Label(win1, text= 'Inches to Centimeters', font=('Arial', 17), bg = '#525361', fg= 'white')
     title.place(x=85, y=0)
 
     entry= tk.Entry(win1, width=50)
@@ -47,7 +47,7 @@ def Cent_Inch():
     win2= tk.Tk()
     win2.title('Centimeters to Inches')
 
-    frame= tk.Frame(master= win2, width= 400, height = 200)
+    frame= tk.Frame(master= win2, width= 400, height = 200, bg = '#525361')
     win2.minsize(400,200)
     win2.maxsize(400,200)
     frame.pack()
@@ -61,7 +61,7 @@ def Cent_Inch():
         display = tk.Label(win2, text = str(rNum) + unit, font=('Arial', 17))
         display.place(x=120, y=150)
         
-    title= tk.Label(win2, text= 'Centimeters to Inches', font=('Arial', 17))
+    title= tk.Label(win2, text= 'Centimeters to Inches', font=('Arial', 17), bg = '#525361', fg= 'white')
     title.place(x=85, y=0)
 
     entry= tk.Entry(win2, width=50)
@@ -78,7 +78,7 @@ def Feet_Meet():
     win3= tk.Tk()
     win3.title('Feet to Meters')
 
-    frame= tk.Frame(master= win3, width= 400, height = 200)
+    frame= tk.Frame(master= win3, width= 400, height = 200, bg = '#525361')
     win3.minsize(400,200)
     win3.maxsize(400,200)
     frame.pack()
@@ -92,7 +92,7 @@ def Feet_Meet():
         display = tk.Label(win3, text = str(rNum) + unit, font=('Arial', 17))
         display.place(x=120, y=150)
         
-    title= tk.Label(win3, text= 'Feet to Meters', font=('Arial', 17))
+    title= tk.Label(win3, text= 'Feet to Meters', font=('Arial', 17), bg = '#525361', fg= 'white')
     title.place(x=120, y=0)
 
     entry= tk.Entry(win3, width=50)
@@ -109,7 +109,7 @@ def Meet_Feet():
     win4= tk.Tk()
     win4.title('Feet to Meters')
 
-    frame= tk.Frame(master= win4, width= 400, height = 200)
+    frame= tk.Frame(master= win4, width= 400, height = 200, bg = '#525361')
     win4.minsize(400,200)
     win4.maxsize(400,200)
     frame.pack()
@@ -123,7 +123,7 @@ def Meet_Feet():
         display = tk.Label(win4, text = str(rNum) + unit, font=('Arial', 17))
         display.place(x=120, y=150)
         
-    title= tk.Label(win4, text= 'Meters to Feet', font=('Arial', 17))
+    title= tk.Label(win4, text= 'Meters to Feet', font=('Arial', 17), bg = '#525361', fg= 'white')
     title.place(x=120, y=0)
 
     entry= tk.Entry(win4, width=50)
@@ -136,8 +136,8 @@ def Meet_Feet():
     win4.mainloop()
     
 #GUI Configuration
-title= tk.Label(win, text= 'Measurement Converter', font=('Arial', 20))
-title.place(x=100, y =0)
+title= tk.Label(win, text= 'Measurement Converter', font=('Times New Roman', 23), bg = '#525361', fg= 'white')
+title.place(x=105, y =0)
 
 InchCent= tk.Button(win, text='Inches \n to \n Centimeters', height= 10, width =20, command= Inch_Cent, font=('Arial', 10), 
 bg = 'navy', fg = 'white')
