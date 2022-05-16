@@ -1,7 +1,7 @@
 import tkinter as tk
 
 win = tk.Tk()
-
+print('hello world')
 frame = tk.Frame(master= win, width = 500, height = 500)
 win.minsize(500,500)
 win.maxsize(500,500)
